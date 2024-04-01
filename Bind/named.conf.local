@@ -1,0 +1,4 @@
+zone "my-test-net.io" {
+    type master;
+    file "/etc/bind/zones/db.my-test-net.io";
+};

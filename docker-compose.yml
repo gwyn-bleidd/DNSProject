@@ -1,0 +1,29 @@
+networks:
+  dnsnet:
+    ipam:
+      config:
+        - subnet: 172.24.0.0/24
+
+services:
+  bind:
+    build: ./Bind
+    container_name: bind
+    networks:
+      dnsnet:
+        ipv4_address: 172.24.0.2 # provide static ip for service
+
+  service1:
+    build: ./Service1
+    container_name: service1
+    dns: 172.24.0.2
+    networks:
+      dnsnet:
+        ipv4_address: 172.24.0.3 # provide static ip for service
+
+  service2:
+    build: ./Service2
+    container_name: service2
+    dns: 172.24.0.2
+    networks:
+      dnsnet:
+        ipv4_address: 172.24.0.4 # provide static ip for service
