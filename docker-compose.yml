@@ -27,3 +27,11 @@ services:
     networks:
       dnsnet:
         ipv4_address: 172.24.0.4 # provide static ip for service
+
+  client:
+    build: ./Client
+    container_name: client
+    dns: 172.24.0.2
+    networks:
+      dnsnet:
+        ipv4_address: 172.24.0.10 # provide static ip for service

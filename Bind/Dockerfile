@@ -6,7 +6,8 @@ RUN apt update \
   dnsutils \
   geoip-bin \
   mariadb-server \
-  net-tools
+  net-tools \
+  curl
 
 # Copy configuration files
 COPY ./named.conf.options /etc/bind/
