@@ -1,0 +1,19 @@
+$TTL    1d ; default expiration time (in seconds) of all RRs without their own TTL value
+@       IN      SOA     ns1.my-test-net.com. root.my-test-net.com. (
+                  6     ; Serial
+                  1d     ; Refresh
+                  1h     ; Retry
+                  1w     ; Expire
+                  1h )   ; Negative Cache TTL
+
+
+; name servers
+        IN      NS      ns1.my-test-net.com.
+
+; prt to name servers
+2       IN      PTR      ns1.my-test-net.com.
+
+; others ptrs
+3       IN      PTR      service1.my-test-net.com.
+4       IN      PTR      service2.my-test-net.com.
+
