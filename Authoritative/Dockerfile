@@ -20,5 +20,13 @@ RUN chown -R bind /etc/bind/
 COPY ./keys  /etc/bind/keys/
 
 
+RUN mkdir -p /var/named/log/
+RUN touch /var/named/log/dnssec
+RUN touch /var/named/log/default
+RUN chown -R bind /var/named/log/
+
+
 # Start the Name Service
-CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
+CMD ["/usr/sbin/named", "-g", "-d", "3", "-c", "/etc/bind/named.conf", "-u", "bind"]
+
+# # RUN /usr/sbin/named -c /etc/bind/named.conf -u bind

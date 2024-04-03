@@ -8,9 +8,9 @@
 
 to check dnssec use this commands
 
-`delv -a ./Authoritative/trust-anchors.txt +root=com. service1.my-test-net.com`
+`delv -a ./Authoritative/trust-anchors.txt +root=com. @172.24.0.5 service1.my-test-net.com`
 
-`dig service1.my-test-net.com. DNSKEY +multiline +noall +answer`
+`dig @172.24.0.5 my-test-net.com. DNSKEY +multiline +noall +answer`
 
 to generate new keys use this (from keys/zone_dir):
 

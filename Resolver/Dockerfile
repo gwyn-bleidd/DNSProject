@@ -16,4 +16,4 @@ COPY ./named.conf.options /etc/bind/
 
 
 # Start the Name Service
-CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
+CMD ["/usr/sbin/named", "-g", "-d", "3", "-c", "/etc/bind/named.conf", "-u", "bind"]

@@ -22,7 +22,6 @@ services:
   service1:
     build: ./Service1
     container_name: service1
-    dns: 172.24.0.2
     networks:
       dnsnet:
         ipv4_address: 172.24.0.3 # provide static ip for service
@@ -30,7 +29,6 @@ services:
   service2:
     build: ./Service2
     container_name: service2
-    dns: 172.24.0.2
     networks:
       dnsnet:
         ipv4_address: 172.24.0.4 # provide static ip for service

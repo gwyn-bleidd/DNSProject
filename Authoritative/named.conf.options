@@ -9,23 +9,3 @@ options {
     dnssec-validation yes;
     auth-nxdomain no;    # conform to RFC1035
 };
-
-
-trust-anchors {
-    /* Root Key */
-
-    my-test-net.com. static-ds 37315 8 2 "5E54242BA2AD5791A5D5ED43ECA07582DC0A0E1BDD0C3DB8E8A5FC3224703757";
-    
-    com. static-ds 26569 8 2 "E2CB8C36E92245CC63FB05EC4AFB46A25910AD2110F0DBCE0D370158 C6F1FF11";
-
-};
-
-trusted-keys {
-    com. 257 3 8 "AwEAAZ89SlbREGD6eSVsxpYUsUo2iVFC/rXcugq+WS9XbBw3HKg9OB8H 
-    L3G+G0BVEXN2u61iaSoYc6VijEsBTRSb3OfwMcM0ZdLdP+njkn3VLvPr 
-    /F4SZ3Rk8I3gpXl8dJWR27eB52/BvL976LzLIM7RN+FrWd88QNjjAp3L
-    ubfUSY2y3tHzmiVCYJHOGphas6o/32JWjb+2sguD8J+lAQZnI9Ty7evE
-    /XMS9gfXr1ZiQ3OEb9AEfomz5s3GqW+iCk+J+74Fp/P1IWI0ajaHv7bh 
-    eiIAMrKwulla4tppAkbg4qnxIEi4O14r9etdxXo4y4ox69IFXKWMeFkf
-    XKflg2MkLDM=";
-};
