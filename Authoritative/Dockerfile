@@ -14,10 +14,10 @@ RUN apt update \
 # Copy configuration files
 COPY ./named.conf.options /etc/bind/
 COPY ./named.conf.local /etc/bind/
-COPY ./zones/db.my-test-net.com /etc/bind/zones/
-COPY ./zones/db.172.24.0 /etc/bind/zones/
-RUN mkdir /etc/bind/keys
-RUN chown -R bind /etc/bind/keys
+COPY ./zones/ /etc/bind/zones/
+RUN mkdir -p /etc/bind/keys/
+RUN chown -R bind /etc/bind/
+COPY ./keys  /etc/bind/keys/
 
 
 # Start the Name Service

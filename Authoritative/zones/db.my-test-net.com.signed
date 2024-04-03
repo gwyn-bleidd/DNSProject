@@ -1,0 +1,118 @@
+; File written on Wed Apr  3 00:51:34 2024
+; dnssec_signzone version 9.18.18-0ubuntu0.22.04.2-Ubuntu
+my-test-net.com.	86400	IN SOA	ns1.my-test-net.com. root.my-test-net.com. (
+					4          ; serial
+					86400      ; refresh (1 day)
+					3600       ; retry (1 hour)
+					604800     ; expire (1 week)
+					3600       ; minimum (1 hour)
+					)
+			86400	RRSIG	SOA 8 2 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					beinv6H5M021z9QWPWPLBm83mT2q2K7uKQ6a
+					tcURBiNCqpDOciXwo8a5ncM4bN2jOQmITCOy
+					fYvMr4p7ksZr/Sr5lcDwOULD9Ht+1CRL32cY
+					n25bKUMWM28eRVG24iaD95/X9a2oG756Y7Ou
+					GEOnQPcrb2LMn0hAhe81EG/liS4= )
+			86400	NS	ns1.my-test-net.com.
+			86400	RRSIG	NS 8 2 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					Afw9jhNnjkzoobgFMmCLKYZWt+qa9R3ZskHk
+					JnjCwjncA+qpaamTBKiGVnrQHovrefMCx4Gg
+					KbRv1VKmStPmw9SqMA6LdJoPOwsYuh2S29jq
+					rkhYOjiK6pwiGtgHLoNPG3OPRL/0wlUvBVm1
+					22noMASJGfiTIAPyX+fcg4f+Ql4= )
+			3600	NSEC	ns1.my-test-net.com. NS SOA RRSIG NSEC DNSKEY
+			3600	RRSIG	NSEC 8 2 3600 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					h5vHhsThZ4QiDwnX1tkJGK1o3E9EU0uSkcKm
+					gtqb27so/VCAziI7JZOQiMn2nm7SaTvlOf8J
+					JE3m2yCiDkz1OPgieGiI40TXjVr6XytEipvF
+					2rJz2ZXn7ErDaNYQBYfoHrJQUwT4/GPszrhl
+					/MFzfPAFbN/DPMgSSJ0e4y7wf8I= )
+			86400	DNSKEY	256 3 8 (
+					AwEAAc31RGj3EIGL1df7lu4fCyiEZVrnRGzS
+					haoT0zCL2zi55O+tzPmPjD+m1maKGIrR/1w/
+					+LHge4zNqa92gGLebayZ1lJQBv2r6W5AIy67
+					/hFZi9EyXpEf3c89ZjK4/NyfBGl1TeX4muqY
+					0UrZM1d3nPcRp8D9+IDtKkOlje+4Xiax
+					) ; ZSK; alg = RSASHA256 ; key id = 12709
+			86400	DNSKEY	257 3 8 (
+					AwEAAdu0nFB+UmZg79BgHuDNGntvRk23FHC5
+					J0UdVnnuNqyyjcsrW6dEXs4Hx8rNsAav4BBD
+					ee6jNeaUXsUrDGjys2QeYoEtv0bjy7t3XHJt
+					qERwkQvRbIUkP3d9GT90bFc+TRU3P/4oX+KY
+					KSOYwkRisfjkalQIfvz3R32j/LCQExOTDpQm
+					rA+fdQDN+VqJLVZNlVAZZImKgTDjsJmC9b2a
+					eHNPWAM8nhRTWHKxdmIUHE7gSdsdAgVJUIDN
+					0gH7AVpdzeMVFPJJWtGCi16Bb27FsLX9Hs3q
+					cxAm2fmu+ym9i1ZKuWTLzu5u8+mjqUyOEsvQ
+					+lrZRhZBbBvdbFjlYH0Fjdc=
+					) ; KSK; alg = RSASHA256 ; key id = 37315
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					MRbxSQ6EPVPHF/fTKLn+L7UJ3My/epfhoVt3
+					ToBzWK6QXKx8hOGtrzPo9/Z4NGNcZnzrqMMt
+					J6SX9VTNEWjjOnVxEYgs4ZbyRxmLsmPu26hR
+					zWlwr/lUhT4B/0EKgSUqUP0zJ8XqyWX6ZxDc
+					avNe/yREiZQH0GaFYAkc+5ygzso= )
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20240502205134 20240402205134 37315 my-test-net.com.
+					pYtL9jytMb//IDn1Xl/+dVGpiXQFwDSlC2cK
+					9r+1gnxjcUH673cH4DGnWFgVejd6gBuJBHvy
+					v2yX4JQjGt+M6kbVNu2pmEdG/Jj392A4dgGr
+					MZDFZyx+pW1mHJBllvYHwTZKmntVcVn6arEQ
+					ICaOfJ7KYwa4zgETmjqUPFqRPIghE3sc5vmO
+					hIMEDhLzbI6edRVwxOI56BsK9dyXMEzVBgn5
+					v9x1xD80lCQ6xwXywyFLyHI/7JFx7Yj1kxSY
+					mPi8TK1lh8OvklnfACVcJHqKi7FXBSMq5eYB
+					tTGJ2PR8ZKo1XyBJAj3tzRB+/SRZp7bzbNDM
+					NR035o1Q0X8qpncKIw== )
+service1.my-test-net.com. 86400	IN A	172.24.0.3
+			86400	RRSIG	A 8 3 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					hK2WxcXVtP2WFOZvwRY7sFVwAJc8o2KuQgxl
+					ZRQdd2Dh/UvgtG5GVZtqaAzKup34HdkmqiK1
+					XChW96MtFm0C7k1uEqOj8kzGuH0te+LPl6iU
+					RN0ChUKEI3gqOqq5x87WfRhDHkNM4z7XwiBP
+					3+lIpomWgC6a4H+H4x7B2/fv0Uo= )
+			3600	NSEC	service2.my-test-net.com. A RRSIG NSEC
+			3600	RRSIG	NSEC 8 3 3600 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					Cflcpjed7q6kKiurGcAE4YDSyoUcmJ70n3iY
+					2cmUXm2yAW7FxqNrEoOCdyqVByYygsjY7CgN
+					BSZYvMXVgbsfm+Jwg5R0bjpf0ysXZ+uaacWq
+					iZ/KDAseK3rvw+57kUzoI3vxNTt1AZmnA5R1
+					S9WVniZTIK7qL62yNAh6nl6/9vs= )
+ns1.my-test-net.com.	86400	IN A	172.24.0.2
+			86400	RRSIG	A 8 3 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					id3Pc0sYyC/EOZpzWv78BBJLqLdx478YE+i/
+					FmQygTvzboRAA+/GXxebvSSKi9VbIozGPuj+
+					YnJquIkaGtQu6DPXPzbH9nAs2g52i0l+nNPI
+					c7fyxmjlIcDFH9JgCipnRFhR/F96mRQxfHck
+					hfzLbPIsUWNKQ753MhDIEDwYTlc= )
+			3600	NSEC	service1.my-test-net.com. A RRSIG NSEC
+			3600	RRSIG	NSEC 8 3 3600 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					khp1AQKBQuPGFEFKvAa/shpVckg9ePpPOch/
+					IktDF4YUjvbpgIycEosOe/9vhQ8izLvjcEJ8
+					9nkab4rYc9UJ/HmgvDJa7AXWfqOtW8Q3z07J
+					j2Ol34QBYtYAqT4w3uK4vH3sXVRUotEzn7B6
+					ugi/qI2Ln3XS7pgoXE1OjHicUyo= )
+service2.my-test-net.com. 86400	IN A	172.24.0.4
+			86400	RRSIG	A 8 3 86400 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					PdP42M2Fz3JT5X6Fxi3ZDp9mcwDBc1OKPvSB
+					2Accca0NQA0GLxGeVriGf5kW7pMSsXR9NAIT
+					o+ns5Jp9Hr2lz2dfCYFsJErzc2RoqhMf/Fwa
+					8Dg/LWOoHAVmhS0S/yzehnaVSryp0tf2QERA
+					Hr5zX9xObZVzLDzlSgUa2lLnMNQ= )
+			3600	NSEC	my-test-net.com. A RRSIG NSEC
+			3600	RRSIG	NSEC 8 3 3600 (
+					20240502205134 20240402205134 12709 my-test-net.com.
+					tXMlQI8zvoRw5a0bb26f+tTrAdjJ7lOYuqAM
+					MgXln7veKyT2qZoA17vbaFv5ukSW3XnyR2Y9
+					bWAhn6zJmJQn0wTb1rwMXxdn+p0Vi0+VFIg7
+					RkMx2St9cR02vRy1U2n9I/83srepJYtfO8ZZ
+					hDucmbG3SYr2FUPdK2j8FK+jmuI= )

@@ -1,11 +1,15 @@
 zone "my-test-net.com" {
     type master;
-    file "/etc/bind/zones/db.my-test-net.com";
+    file "/etc/bind/zones/db.my-test-net.com.signed";
 };
 
+zone "com" { 
+   type master;
+   file "/etc/bind/zones/db.com.signed";
+};
 
 # reverse zone
-zone "0.24.172.in-addr.arpa" {
-    type master;
-    file "/etc/bind/zones/db.172.24.0";
-};
+# zone "0.24.172.in-addr.arpa" {
+#    type master;
+#    file "/etc/bind/zones/db.172.24.0";
+# };
