@@ -7,7 +7,7 @@ $TTL    1d ; default expiration time (in seconds) of all RRs without their own T
                   1h )   ; Negative Cache TTL
 
 ; name servers - NS records
-ns1.com. IN NS ns1.com.
+com. IN NS ns1.com.
 
 ; name servers - A records
 ns1             IN      A      172.24.0.2
