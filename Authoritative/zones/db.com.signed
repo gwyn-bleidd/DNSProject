@@ -1,43 +1,43 @@
-; File written on Tue Apr  2 21:54:17 2024
+; File written on Fri Apr  5 22:49:43 2024
 ; dnssec_signzone version 9.18.18-0ubuntu0.22.04.2-Ubuntu
-com.			86400	IN SOA	ns1.com. root.com. (
+com.			5	IN SOA	ns1.com. root.com. (
 					11         ; serial
 					86400      ; refresh (1 day)
 					3600       ; retry (1 hour)
 					604800     ; expire (1 week)
 					3600       ; minimum (1 hour)
 					)
-			86400	RRSIG	SOA 8 1 86400 (
-					20240502175417 20240402175417 13339 com.
-					doHsH9+RxA++bBwhOYV0KNzU/3u3mNbnxxoG
-					DO1oDJiFwL153SHcB0P3UGN7XFKgX+dJjdra
-					Fi8v2Nw4Qx4UvvynRaJJMgPfomuAclsutSar
-					7C00rnBo8sVm3tDL5ApWfDxw5rTyDFgb5/06
-					TX1WpqobAwza67XxLuNIxlaoVbI= )
-			86400	NS	ns1.com.
-			86400	RRSIG	NS 8 1 86400 (
-					20240502175417 20240402175417 13339 com.
-					NNTBb3T7HNbfCQ5RMzHQxiiIUNn7PGHPM6kK
-					ZhTBZ/5PP08dcZ2AUAp0H/nrOSq2P8tY4fai
-					5n1ue+Ch+T5b3x5CIjYQlxtQ7UGtRmzKk+c6
-					xunnbYBfzXikrvegiTAdfYtJ7uKLdp+lKBAk
-					wenEu2CS6NunoHin8EDBIbe4PHc= )
-			3600	NSEC	my-test-net.com. NS SOA RRSIG NSEC DNSKEY
-			3600	RRSIG	NSEC 8 1 3600 (
-					20240502175417 20240402175417 13339 com.
-					XMJ0A4ezICB4db6z/wYQx1OTcEJrQW59HT/5
-					9MJbzpPPfqCpl3SszXY9pKLAXlNIKgF1ulIq
-					EzF8+zjL/XQ+owts7ARgDpW3NdQ/5t0jX1fK
-					LkwNNgCI+vlniiyHsoKuwoOOQ7UsEhDLgS1z
-					allpO95OnXJfOvBLPq/gKzgCBGU= )
-			86400	DNSKEY	256 3 8 (
+			5	RRSIG	SOA 8 1 5 (
+					20240505184943 20240405184943 13339 com.
+					kAZNoeDrRsBX/NBkK0fQTYfS7afC2PwiPJ/a
+					5+2ei58AZLkhRlof/hmrW9Q3yZEpoEY0zPzJ
+					87rPXUOFqWvzT9FehO+Q1BPgMVCELhfDhQaw
+					tuiznwnqoVc+L/SOKN3hbU87jAQEH+C5yq2/
+					Pnf/eGEOuF1jL+Nxq5M6m+yFfrU= )
+			5	NS	ns1.com.
+			5	RRSIG	NS 8 1 5 (
+					20240505184943 20240405184943 13339 com.
+					hGmw5Df6yxFZuIKu/KfdlFWl/90htLRwk/rb
+					3zFxySvWdIqUZGi0oTf0KYE5jY1odTUQhYAy
+					zY6sh0pJxUf1doZD7L2ZiTOQXmzwi+CfD0vI
+					mCnPpEGKJmxxPs3fD/7+HoOgD0Pu0g68yA7c
+					QP1I18CvJae6k/MDFdMcp5PoWL8= )
+			5	NSEC	my-test-net.com. NS SOA RRSIG NSEC DNSKEY
+			5	RRSIG	NSEC 8 1 5 (
+					20240505184943 20240405184943 13339 com.
+					GLDfmrIw2//yMRibw5NbWPGyrxy1rg6kHO5I
+					hFgojpisUpfJ2nS4qAJl0a0UYZUuTbeI31sf
+					BDJx7KZf2l0vl3KFoHpCZOpE1x+H8/z1m2RT
+					F6YftXpgY+SbFwxuPQI0uq3GnWEijPxQ4prs
+					+VZSWfFGiGshZeXP/u8NLsoEPSY= )
+			5	DNSKEY	256 3 8 (
 					AwEAAZj9Fevor8z5AhOUWY4lZoTnEPs68V77
 					FF6ZMT0WGU0EspFb/0fgL36XHOrZ4lNAHJBB
 					LGSs7U3ZzPMWYAFr8TXzfODdl1XiPCFtOWR7
 					iGOWalVh515w/CDU9yujcwFbUl64rIo8aSaW
 					jPimknDphyQ376CaTCVZzNHLYAKi31ld
 					) ; ZSK; alg = RSASHA256 ; key id = 13339
-			86400	DNSKEY	257 3 8 (
+			5	DNSKEY	257 3 8 (
 					AwEAAZ89SlbREGD6eSVsxpYUsUo2iVFC/rXc
 					ugq+WS9XbBw3HKg9OB8HL3G+G0BVEXN2u61i
 					aSoYc6VijEsBTRSb3OfwMcM0ZdLdP+njkn3V
@@ -49,58 +49,58 @@ com.			86400	IN SOA	ns1.com. root.com. (
 					ulla4tppAkbg4qnxIEi4O14r9etdxXo4y4ox
 					69IFXKWMeFkfXKflg2MkLDM=
 					) ; KSK; alg = RSASHA256 ; key id = 26569
-			86400	RRSIG	DNSKEY 8 1 86400 (
-					20240502175417 20240402175417 13339 com.
-					aGhn+6feNv8BKQFHY6p9GHp8WDmdsl5wtDLt
-					wSaP35qOaaZ+p0qiP+j6r5fiuCQuUFECBI+J
-					07giMMcrO89hA41sgEcUYOmeREzCyiMd9Kb6
-					Y749BSFbG+XYfcXa3oJ36UQ3xOW02bt13EwI
-					oWhpiI4IS+jYS+nij83PArjLgTo= )
-			86400	RRSIG	DNSKEY 8 1 86400 (
-					20240502175417 20240402175417 26569 com.
-					fsA6Ho3Kdahx6KYDXYiOhR4WYAMRh0aDw8k0
-					JAnnpU9Q5L0y4e1g5bAL/36ax/WKQ8BP4L0J
-					/PbBHk8sqCPNUaBokzL4EgqmMxjhzVOluojg
-					ga+vcTQSNlc0xEOZhJ0c2lr8/S3H8fMn128O
-					olq35LWt5OheRTOtXLXofgZZjF+sBhCBwF/P
-					QmPNbMld/cHIPPjyeWlyQ7F97NRk3fLjr3mO
-					TFeQYed9wpIVwJR/UoOj+lWBQFxWJ3k/4YzD
-					EWIB4RXwRW5i/rbaQJnEw/Qrz6zVPJxi2z/r
-					lne8aV5EbitUGxRqsUsfMgW2avU/YiR/Q43o
-					MbNqKvYyfUh1hThdrg== )
-my-test-net.com.	86400	IN NS	ns1.my-test-net.com.
-			86400	A	172.24.0.2
-			86400	DS	37315 8 2 (
-					5E54242BA2AD5791A5D5ED43ECA07582DC0A
-					0E1BDD0C3DB8E8A5FC3224703757 )
-			86400	RRSIG	DS 8 2 86400 (
-					20240502175417 20240402175417 13339 com.
-					Qatkwjk9pPibGII+1/TtR27qDyb9poICPKg9
-					RnXJOdZcHUvI2GFLwx4Xs1RzaoumSn6K8ITU
-					J2PyRAek/5VzwlcirD8xza4ORiHFLWIg113x
-					2CXLutFLnltK1H1Vm/f0nTC3/bhtr+qqXtI0
-					YT0yJ91eEpDFn7SAr6qVe9x1f2U= )
-			3600	NSEC	ns1.com. NS DS RRSIG NSEC
-			3600	RRSIG	NSEC 8 2 3600 (
-					20240502175417 20240402175417 13339 com.
-					koP067r4Js5TSIj1wDOCGlM67/AmSoMxynIa
-					tu4T71ZEMnXdVJZzBBwwQqaZTr8GyW8xfDp3
-					gwgH5532Os31HsZ2VZBguxSNvKFF0ceZHIuT
-					aoYB9A9/JcytjTzZEP4PRKTlZhTwJaYfFcCo
-					pWrDPhIXzKL3URTLvOg5TpiKAFc= )
-ns1.com.		86400	IN A	172.24.0.2
-			86400	RRSIG	A 8 2 86400 (
-					20240502175417 20240402175417 13339 com.
-					B877n+pt5QaIXXOzBsFiubJ30u7DT8sreBxZ
-					vYn9TVCp5Qe5whbyCU1uSgr3VIa3pbLzfKvI
-					/H3pXthRxZ+MxlzBlOyGE4zLVFWngRUxcYnI
-					RVdfkMrkoJF4xQap+kKH+ZEPpoljmlXfokc5
-					WNfzaoW9wbwo1c3Nu4Sbgp3YAbw= )
-			3600	NSEC	com. A RRSIG NSEC
-			3600	RRSIG	NSEC 8 2 3600 (
-					20240502175417 20240402175417 13339 com.
-					N1XxR90rFLpxeSSx1MmjGMjSJSwicmjh4bpy
-					7xdXAMWfG2bd884EuKSdc8rZHzk9BvY0v73C
-					wS0EFwxf94wXqyk5gUu0pdAMkMXaJ3Vlc6Aa
-					+FWjMkLfH8loTZiojRMxb601+UMxdPzJAyUX
-					xAMMyn3EzEOCTlXQ3mRc6lSZJOw= )
+			5	RRSIG	DNSKEY 8 1 5 (
+					20240505184943 20240405184943 13339 com.
+					ZDUeUW3tLb7B91H12APmKVFVI6L/EZzNJFZ7
+					8VzKA21BIcy+6WFGEQdRfEcmSpp8/A9LRtYm
+					vqEK1KLg9vDywquoOnPFFonkOVPU4/exwUXh
+					Cq0HP9TkpixVH18OKXQFGacVga6NM9JCu7Yd
+					UWXtHW9Rk7yfkui6EiIKkESrQEU= )
+			5	RRSIG	DNSKEY 8 1 5 (
+					20240505184943 20240405184943 26569 com.
+					HEZOqtvsiVLFQ/r9cVUIV1vCfdzxIkueMhNl
+					pdpxroauJuaouxC/Kf0BGIuT5zm8ZcOg7Ae7
+					lJswFFCAOHEShRKhSWu/DYBdu6hvLgjGJy6Y
+					IgHx+JZDUnl9vVlw99hBAhqcZnhdkKp6RpIT
+					4IBhkp7JENqMfvyexCnT8OJWwNI0sGUuNido
+					yKvBhxfoKP30Tgqd5FBraKS45nWGRCAWOwcF
+					1eCxPxIZZfvKBkYlAoCeaJ2LKOtTRvXriFSG
+					m8koGijxhdgfELpV73MXdfv3FviH1FgElB3L
+					XkmCTb5rL3BkWfx3bAVDAqlyTJRrmy0NLGBo
+					vW8g8Hig/ZPj4ouwag== )
+ns1.com.		5	IN A	172.24.0.2
+			5	RRSIG	A 8 2 5 (
+					20240505184943 20240405184943 13339 com.
+					ER7xk76Ip/CY2PvQHo5SUb7PT6NI6vXziVsF
+					uTcjIlLOdiYtRvYjSvIWD37xcTyFvvhu4lGW
+					Z26v5JV9SrFpG0EjLrTSuTtxNcUEjwPOgo83
+					+mrd7paxymBdXHPCS7QlFLFRhutMaTNby0rq
+					kL7kj8NCwWNzkuiwiymiOpmRkiw= )
+			5	NSEC	com. A RRSIG NSEC
+			5	RRSIG	NSEC 8 2 5 (
+					20240505184943 20240405184943 13339 com.
+					LezJ5FhWkOn16chYK+BDTVQwSWsMrEizFbuZ
+					p743Keo5Os1NpNs/QIxijgUlz1O5bhxx5KB1
+					/QVkBpJxVhIq9F7XJG7UMvUFmg2391tvXJAV
+					z0ntDE2mX4KnVhgN3MyGyqn0pbUw63YiwijQ
+					9F2eCGYLqIQhv7nsnny5Yq/S2VI= )
+my-test-net.com.	5	IN NS	ns1.my-test-net.com.
+			5	A	172.24.0.2
+			5	DS	12941 8 2 (
+					AD33091DB411DF91E6DB18F7019B501F2239
+					EDDF6533C41A4EA90D68FD50622F )
+			5	RRSIG	DS 8 2 5 (
+					20240505184943 20240405184943 13339 com.
+					F5mO+f4+m7l2uv4mggmlaMzW2WeBUnOe4k3C
+					ek6ZwzEKPQORmMFGDbDAYwSC5E53WIqVdHGB
+					0wLfM3/cZfwR5k9KJu2CJzVGVCUMJrMs0swX
+					U8bzco8Js+Q+dBxNDT9an78LrSar/CeouGK4
+					hBO+MBdZ5XOjkJgIAMT9LWaYyuQ= )
+			5	NSEC	ns1.com. NS DS RRSIG NSEC
+			5	RRSIG	NSEC 8 2 5 (
+					20240505184943 20240405184943 13339 com.
+					W3yleoQb52T/wAwQ9s5c9pOF1YKj2Tjr+iPz
+					b+AeXcWiYkXa4TuRjhtnACL70TABWKj/RF/p
+					3hVDJvUThrgaEE4a4DD0rGAP3Jbemzq7/SZg
+					nLDAQ/RoCZXrp0plPncmbXz1QJmfJraZwNgI
+					cXOv/1h5veQmRezEkruDU7aCbM8= )

@@ -12,6 +12,8 @@ to check dnssec use this commands
 
 `dig @172.24.0.5 my-test-net.com. DNSKEY +multiline +noall +answer`
 
+`dig @172.24.0.5 service1.my-test-net.com. +dnssec +multiline +noall +answer`
+
 to generate new keys use this (from keys/zone_dir):
 
 `dnssec-keygen -a RSASHA256 -b 1024 my-test-net.com`

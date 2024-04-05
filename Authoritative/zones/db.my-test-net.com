@@ -1,4 +1,4 @@
-$TTL    1d ; default expiration time (in seconds) of all RRs without their own TTL value
+$TTL    5s ; default expiration time (in seconds) of all RRs without their own TTL value
 @       IN      SOA     ns1.my-test-net.com. root.my-test-net.com. (
                   3      ; Serial
                   1d     ; Refresh
@@ -17,6 +17,5 @@ service1        IN      A      172.24.0.3
 service2        IN      A      172.24.0.4
 
 
-my-test-net.com. IN DNSKEY 256 3 8 AwEAAc31RGj3EIGL1df7lu4fCyiEZVrnRGzShaoT0zCL2zi55O+tzPmP jD+m1maKGIrR/1w/+LHge4zNqa92gGLebayZ1lJQBv2r6W5AIy67/hFZ i9EyXpEf3c89ZjK4/NyfBGl1TeX4muqY0UrZM1d3nPcRp8D9+IDtKkOl je+4Xiax
-my-test-net.com. IN DNSKEY 257 3 8 AwEAAdu0nFB+UmZg79BgHuDNGntvRk23FHC5J0UdVnnuNqyyjcsrW6dE Xs4Hx8rNsAav4BBDee6jNeaUXsUrDGjys2QeYoEtv0bjy7t3XHJtqERw kQvRbIUkP3d9GT90bFc+TRU3P/4oX+KYKSOYwkRisfjkalQIfvz3R32j /LCQExOTDpQmrA+fdQDN+VqJLVZNlVAZZImKgTDjsJmC9b2aeHNPWAM8 nhRTWHKxdmIUHE7gSdsdAgVJUIDN0gH7AVpdzeMVFPJJWtGCi16Bb27F sLX9Hs3qcxAm2fmu+ym9i1ZKuWTLzu5u8+mjqUyOEsvQ+lrZRhZBbBvd bFjlYH0Fjdc=
-
+my-test-net.com. IN DNSKEY 256 3 8 AwEAAeQ1f8PdzGvxaGv81sMnz7sdD+I6GUq66dqZBJcmI8I9OqP8by1A gJVeeoPfA6JsQ1dhsSLzDcjBjirjb344ieACtrz3O0IDF9UYRH4SP/fJ h+iF2hgqJi47WdR/fX3qv+WEchAhvfIjmd8+lbtF3mhOCYWhGban/H4S t/dt8TQT
+my-test-net.com. IN DNSKEY 257 3 8 AwEAAbfVf1CxSVdUXC83o1VVI4WJH6EwrAlO1DhtZrJmYtpm1fSiYW7P 5/hKibJYkg6PxqxSJgD9AKLC9JYD0ZmTro5E/Q9ldG35xQpZqEZDogSU 3NT3kSV8KJD7bHjGvUeZm5K/6uwZTnbtGX7i0UDWa3lWPslJlgI4rmVZ U5IrTjNR1MNRk6MsgBb+04VPOBD0j4daFSC9Z74qaVQk2fWzMNa74FS5 3sWxggrbXt70SAz8NyYewfybc2jAm6sDD+HeICtsnxRuxuFhyH5/cJgm SW4alWjxReZJnSJMOWdAcvJFBT8wUJ7DMiZohXKLVktoXJ77BVURO7BN Nfz+lmCIXuc=
